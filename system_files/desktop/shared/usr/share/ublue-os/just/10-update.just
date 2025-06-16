@@ -9,7 +9,7 @@ update:
     # Source brew if we are not in an interactive session
     [[ $- != *i* ]] && source <(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
-    /usr/bin/topgrade --config /usr/share/ublue-os/topgrade.toml --keep
+    pkexec /usr/bin/uupd
 
 # Turn automatic updates on or off
 _toggle-updates ACTION="prompt":
